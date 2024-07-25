@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heyuan LIU</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/bitbug_favicon.ico" type="image/x-icon">
+
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -66,7 +69,7 @@
             font-weight: bold;
         }
         .profile-img {
-            width: 200px; /* 修改这里来调整图片大小 */
+            width: 200px;
             border-radius: 50%;
             margin: 20px auto;
         }
@@ -126,6 +129,58 @@
             color: white;
             border-color: #004080;
         }
+        .project-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .project-item img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .project-item div {
+            flex: 1;
+        }
+        @media (max-width: 768px) {
+            .project-item {
+                flex-direction: column;
+                align-items: center;
+            }
+            .project-item img {
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 10px;
+                margin: 20px auto;
+            }
+            .profile-img {
+                width: 150px;
+            }
+            .section-title {
+                font-size: 20px;
+            }
+            .resume-download a {
+                font-size: 16px;
+            }
+            .social-links a {
+                margin: 5px;
+                padding: 8px 15px;
+                font-size: 16px;
+            }
+            .project-item img {
+                width: 100%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -158,7 +213,7 @@
             I am a M1 AiViC (Artificial Intelligence and Advanced Visual Computing) student at École Polytechnique(Estimated graduate in October 2025)<br><br>
             My research is foucsing on bridging the <strong>advanced AI & CS techniques</strong> AND <strong>industrial Process & Energy System</strong></p>
             <br><br>
-            <p><strong>Looking for: Internship from April to October 2025 and PhD positions in 2025 Fall<</strong>/p>
+            <p><strong>Looking for: Internship from April to October 2025 and PhD positions in 2025 Fall</strong></p>
         </div>
     </section>
     <section class="highlight">
@@ -192,18 +247,55 @@
     <section class="highlight">
         <h2 class="section-title">Projects</h2>
         <div class="section-content">
-            <p class="experience-item"><strong>Identify optimal configuration with a machine learning method in multi-criteria decision analysis</strong><br>Research Project @ EPFL IPESE lab <br> Mar. 2024 to Sep. 2024 <br>
-            The work in EPFL IPESE lab focuses on data-driven methods for decision-making in AI applications within Energy Systems and Industrial Processes. This involves techniques like Dimension Reduction, Clustering, Deep Learning, Reinforcement Learning, and the use of LLM Chatbots.</p>
-            <p class="experience-item"><strong>Navi-UAV</strong><br>INF581 Project @ École Polytechnique <br> Jan. 2024 to Mar. 2024 <br>Link: <a href="https://github.com/172698691/INF581-Project">GitHub</a><br>
-            Implemented Reinforcement Learning (DDPG) to enable UAVs to navigate through dynamic and uncertain environments efficiently.</p>
-            <p class="experience-item"><strong>Real-Time AI for StarCraft</strong><br>INF584A @ École Polytechnique <br> Jan. 2024 to Mar. 2024 <br>Link: <a href="https://github.com/MiSFiT5/Real-Time-AI-for-Star-Craft-Based-on-BWAPI">GitHub</a><br>
-            Implemented real-time AI strategies for the game StarCraft based on the BWAPI, Selected Terran and beated 8/9 teams in the course, Ranking 1st in Terran, 2nd overall.</p>
-            <p class="experience-item"><strong>Extractive Summarization with Discourse Graphs</strong><br>INF554 @ École Polytechnique <br> Oct. 2023 to Dec. 2023 <br>Link: <a href="https://github.com/MiSFiT5/INF554_Project">GitHub</a><br>
-            Utilized GraphSAGE, Graph Convolutional Networks (GCN), Graph Attention Networks (GAT), and other graph-based models to enhance text summarization by analyzing conversation structures and important content.</p>
-            <p class="experience-item"><strong>Vtuber-Genshin</strong><br>INF573 @ École Polytechnique <br> Oct. 2022 to Dec. 2023 <br>Link: <a href="https://github.com/172698691/VTuber-Genshin">GitHub</a><br>
-            Developed a real-time virtual character using MediaPipe and Unity, achieving high performance in head pose estimation and face mesh, ensuring stability and real-time capabilities.</p>
-            <p class="experience-item"><strong>A Dynamic Detection Approach for Oscillating Loss Problem in DNN based on AUTOTRAINER</strong><br>Final Year Project @ MUST <br> Sep. 2022 - May 2023 <br>Link: <a href="https://github.com/MiSFiT5/Dynamic-AUTOTRAINER">GitHub</a><br>
-            Developed a dynamic bug detection system to identify and resolve oscillating loss issues in Deep Neural Networks, achieving a 50% reduction in time and computational resources required for bug detection, and received an “A+”.</p>
+            <div class="project-item">
+                <img src="mesh_animation.gif" alt="Project GIF">
+                <div>
+                    <p><strong>Identify optimal configuration with a machine learning method in multi-criteria decision analysis</strong><br>Research Project @ EPFL IPESE lab <br> Mar. 2024 to Sep. 2024 <br>
+                    The work in EPFL IPESE lab focuses on data-driven methods for decision-making in AI applications within Energy Systems and Industrial Processes. This involves techniques like Dimension Reduction, Clustering, Deep Learning, Reinforcement Learning, and the use of LLM Chatbots. The highlights are transform the original datasets into shapes and uses shape anaysis to extract more features</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="DDPG.jpg" alt="Project GIF">
+                <div>
+                    <p><strong>Navi-UAV</strong><br>INF581 Project @ École Polytechnique <br> Jan. 2024 to Mar. 2024 <br>Link: <a href="https://github.com/172698691/INF581-Project">GitHub</a><br>
+                    Implemented Reinforcement Learning (DDPG) to enable UAVs to navigate through dynamic and uncertain environments efficiently.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="results_shorten.gif" alt="Project GIF">
+                <div>
+                    <p><strong>Precision Collision Dynamics Simulation in Pinball</strong><br>INF585 Project @ École Polytechnique <br> Jan. 2024 to Mar. 2024 <br>Link: <a href="https://github.com/172698691/INF-585/tree/main/inf585_lab_code/scenes_inf585/project">GitHub</a><br>
+                    Implemented the pinball simulations in aminations, hard and soft collisions are taken into considerations. (Iron pillar and Spring)</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="Starcraft.jpeg" alt="Project GIF">
+                <div>
+                    <p><strong>Real-Time AI for StarCraft</strong><br>INF584A @ École Polytechnique <br> Jan. 2024 to Mar. 2024 <br>Link: <a href="https://github.com/MiSFiT5/Real-Time-AI-for-Star-Craft-Based-on-BWAPI">GitHub</a><br>
+                    Implemented real-time AI strategies for the game StarCraft based on the BWAPI, Selected Terran and beated 8/9 teams in the course, Ranking 1st in Terran, 2nd overall.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="outlineforNLP.png" alt="Project GIF">
+                <div>
+                    <p><strong>Extractive Summarization with Discourse Graphs</strong><br>INF554 @ École Polytechnique <br> Oct. 2023 to Dec. 2023 <br>Link: <a href="https://github.com/MiSFiT5/INF554_Project">GitHub</a><br>
+                    Utilized GraphSAGE, Graph Convolutional Networks (GCN), Graph Attention Networks (GAT), and other graph-based models to enhance text summarization by analyzing conversation structures and important content.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="result.gif" alt="Project GIF">
+                <div>
+                    <p><strong>Vtuber-Genshin</strong><br>INF573 @ École Polytechnique <br> Oct. 2022 to Dec. 2023 <br>Link: <a href="https://github.com/172698691/VTuber-Genshin">GitHub</a><br>
+                    Developed a real-time virtual character using MediaPipe and Unity, achieving high performance in head pose estimation and face mesh, ensuring stability and real-time capabilities.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="Autotrainer.png" alt="Project GIF">
+                <div>
+                    <p><strong>A Dynamic Detection Approach for Oscillating Loss Problem in DNN based on AUTOTRAINER</strong><br>Final Year Project @ MUST <br> Sep. 2022 - May 2023 <br>Link: <a href="https://github.com/MiSFiT5/Dynamic-AUTOTRAINER">GitHub</a><br>
+                    Developed a dynamic bug detection system to identify and resolve oscillating loss issues in Deep Neural Networks, achieving a 50% reduction in time and computational resources required for bug detection, and received an “A+”.</p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="highlight">
@@ -224,6 +316,16 @@
             <p class="experience-item"><strong>Languages:</strong> English (Fluent), Chinese/Mandarin (Native), Deutsch (Basic), French (Beginner)</p>
             <p class="experience-item"><strong>Interests:</strong> Basketball, Saxophone, Dragon boat</p>
         </div>
+    </section>
+     <section class="highlight">
+        <h2 class="section-title">Special Awards</h2>
+        <div class="project-item">
+                <img src="award.JPG" alt="Project GIF">
+                <div>
+                    <p>Issued by co-worker in École Polytechnique <a href="https://www.linkedin.com/in/ziyu-wu-32259329a/?originalSubdomain=fr">Ziyu WU</a><br>
+                    Translations: You are the backbone of our team. <strong>#Reliable teammate</strong> </p>
+                </div>
+            </div>
     </section>
     <section class="highlight">
         <h2 class="section-title">Contact Me</h2>
